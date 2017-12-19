@@ -1,0 +1,35 @@
+.TaskView {
+    position: relative;
+}
+
+.TaskView-left {
+    position: absolute;
+    left: 0;
+    border-right: 1px solid #666;
+    box-sizing: border-box;
+}
+
+.TaskView-right {
+    position: absolute;
+    right: 0;
+}
+
+.TaskView-top {
+    top: 0;
+    height: 50px;
+    border-bottom: 1px solid #666;
+    box-sizing: border-box;
+}
+
+.TaskView-bottom {
+    top: 50px;
+    bottom: 0;
+}
+
+.TaskView-resizeHandle {
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    cursor: ew-resize;
+    z-index: 3;
+}

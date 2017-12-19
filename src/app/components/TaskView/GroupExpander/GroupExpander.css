@@ -1,0 +1,18 @@
+.GroupExpander {
+    width: 13px;
+    margin-right: 2px;
+    cursor: pointer;
+}
+.GroupExpander::after {
+    content: '';
+    height: 8px;
+    width: 8px;
+    display: block;
+    border-right: 1px solid #767676;
+    border-bottom: 1px solid #767676;
+    transform: rotate(315deg) translate(-2px, 1px);
+    transition: transform 0.1s ease;
+}
+.GroupExpander--expanded::after {
+    transform: rotate(45deg);
+}

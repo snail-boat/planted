@@ -1,0 +1,49 @@
+.TaskTreeHeader {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.TaskTreeHeader-row {
+    display: flex;
+    position: absolute;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #f4f4f4;
+    background-color: #fff;
+    color: #333;
+    font-weight: bold;
+
+    text-align: left;
+}
+
+.TaskTreeHeader-cell {
+    flex: 1;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.TaskTreeHeader-columnResizeHandle {
+    right: 0;
+    width: 8px;
+    height: 100%;
+    cursor: ew-resize;
+}
+
+.TaskTreeHeader-cellContent {
+    flex: 1;
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    padding: 18px 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.TaskTreeHeader-cellContent:hover {
+    background-color: #f8f8f8;
+}

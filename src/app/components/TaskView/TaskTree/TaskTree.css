@@ -1,0 +1,45 @@
+.TaskTree {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.TaskTree-canvas {
+    position: relative;
+    background-color: #fff;
+    background-size: 30px 30px;
+}
+
+.TaskTreeRow {
+    position: absolute;
+    display: flex;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #f4f4f4;
+    background-color: #fff;
+    color: #767676;
+
+    text-align: left;
+}
+
+.TaskTreeRow-group {
+    font-weight: bold;
+}
+
+.TaskTreeRow-cell {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+}
+
+.TaskTreeRow-cellContent {
+    flex: 1;
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    padding: 7px 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
